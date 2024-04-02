@@ -1,0 +1,86 @@
+.bodyContainer{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: blueviolet;
+    background-image: url(../../assets/girl-3253532_1280.jpg);
+  background-size: auto;
+  background-position: top;
+}
+
+.searchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+}
+ 
+.searchInput {
+    width: 60vw;
+    height: 6vh;
+    padding-left: 2vw;
+    font-size: 1,2rem;
+    border-radius: 35px;
+}
+
+.seachInput::placeholder{
+    font-size: 1.2rem;
+
+}
+
+.searchIcon{
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+}
+
+.cataloguwContainer{
+    width: 60vw;
+    background-color: black;
+   margin-top: 5vh;
+   display: flex;
+   justify-content: center;
+   z-index: -80;
+}
+
+.bannerContainer{
+    width: 68vw;
+    margin: 1vw auto;
+}
+
+.banner{
+    position: relative;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerBg::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/girl-3253532_1280.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+opacity: 0.2;
+z-index: -70;
+}
+
+.banner h2 {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+}
+
+.products img {
+
+}
+
+.products{
+
+}

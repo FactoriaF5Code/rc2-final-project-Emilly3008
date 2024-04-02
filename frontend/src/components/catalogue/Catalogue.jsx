@@ -14,6 +14,7 @@ function Catalogue() {
 
   return (
     <div className = "bodyContainer">
+        <div className = "bodyContainerImg"></div>
     <div className = "searchContainer">
       <input
        className= "searchInput"

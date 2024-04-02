@@ -54,7 +54,7 @@ function DetailsProduct() {
                         {product.description}
                       </p>
                     </div>
-                    <button className="detailsBtn">Añadir al carrito</button>
+                    <button className="detailsButton">Añadir al carrito</button>
                   </section>
                 </section>
               </div>

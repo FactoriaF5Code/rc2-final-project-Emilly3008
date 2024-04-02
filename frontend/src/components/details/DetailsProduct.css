@@ -1,0 +1,44 @@
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}
+
+.details img{
+
+}
+
+.detailsParraf{
+
+}
+
+
+
+
+
+.detailsTitle{
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+
+.detailsPrice{
+    font-size: 1.9rem;
+    margin-bottom: 5vh;
+margin-top: 1vh;
+color:brown
+}
+.detailsDescription{
+    font-size: 1.5rem;
+
+}
+.datailsButton{
+    background-color: cadetblue;
+    width: 15vw;
+    height: 5vh;
+    font-size: larger;
+    color:rgb(225, 8, 102);
+border: none;
+cursor: pointer;
+}
