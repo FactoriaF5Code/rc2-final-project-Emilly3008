@@ -1,0 +1,53 @@
+/* LoginButton.css */
+
+.loginButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #411C42;
+    color: #fff;
+    padding: 7px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Joti One', cursive;
+  }
+  
+  .loginButton:hover {
+    background-color: #EEB0B0;
+  }
+  
+  /* LoginButton.css */
+
+.menu {
+    background-color: black;
+    padding: 25px;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .menu ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #411C42;
+    font-weight: bold;
+    font-family: 'Joti One', cursive;
+  }
+  
+  .menu ul li a:hover {
+    color: #007bff;
+  }
+  

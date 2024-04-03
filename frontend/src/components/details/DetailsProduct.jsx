@@ -1,7 +1,7 @@
 import "./DetailsProduct.css";
 import { useFetch } from "../catalogue/useFetch";
 import { useState, useEffect } from "react";
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { useParams } from "react-router-dom";
 
 function DetailsProduct() {
