@@ -13,7 +13,16 @@ function Catalogue() {
 
   return (
     <div className="bodyContainer">
-      <div className="bodyContainerImg"></div>
+      <div className="catalogueContainer">
+        <section className="bannerContainer">
+          <div className="banner">
+            <div className=" banner.b">
+                  <h2>¡GymElite: Esculpe tu cuerpo con nuestro enfoque en músculos y definición. Entrenamiento personalizado, clases grupales vibrantes y equipo de vanguardia. Únete hoy para una vida más fuerte y definida!</h2>
+            </div>
+          </div>
+        </section>
+      </div>
+
       <div className="searchContainer">
         <input
           className="searchInput"
@@ -25,32 +34,23 @@ function Catalogue() {
           <LocalMallOutlinedIcon />
         </span>
       </div>
-      <div className="catalogueContainer">
-        <section className="bannerContainer">
-          <div className="banner">
-            <div className=" banner.b">
-              <h2>¡Cuerpo sano, mente sana!</h2>
-            </div>
-          </div>
 
-          <div className="products">
-            {filteredData?.map((product) => (
-              <div key={product.id}>
-                {" "}
-                <Link
-                  to={`/frontend/src/components/catalogue/Catalogue.jsx/&product.id}`}
-                >
-                  <section className="containerImg">
-                    <img src={product.img} alt={product.name}></img>
-                  </section>
-                </Link>
-              </div>
-            ))}
+      <div className="products">
+        {filteredData?.map((product) => (
+          <div key={product.id}>
+            <Link
+              to={`/frontend/src/components/catalogue/Catalogue.jsx/&product.id}`}
+            >
+              <section className="containerImg">
+                <img src={product.img} alt={product.name}></img>
+              </section>
+            </Link>
           </div>
-        </section>
+        ))}
       </div>
     </div>
   );
 }
 
 export default Catalogue;
+
