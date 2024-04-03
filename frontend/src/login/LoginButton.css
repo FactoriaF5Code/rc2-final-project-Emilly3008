@@ -1,9 +1,38 @@
-/* LoginButton.css */
+.menu {
+  background-color: black;
+  padding: 10px 20px; /* Ajusta el relleno de la barra de menú */
+
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  
+}
+
+.logo {
+  width: 70px; /* Ajusta el tamaño del logo según lo necesites */
+  height: auto; /* Esto mantiene la proporción original */
+  margin-left: 10px; /* Espacio entre el logo y el nombre del sitio */
+  
+  
+}
+
+.siteName {
+  font-family: 'Joti One', cursive;
+  font-size: 2.5rem; /* Tamaño del texto del nombre del sitio */
+  font-weight: bold;
+  color: #411C42; /* Color del texto */
+  margin-top: 10px;
+  
+}
+
 
 .loginButton {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 70px;
     background-color: #411C42;
     color: #fff;
     padding: 7px 30px;
@@ -16,38 +45,5 @@
   
   .loginButton:hover {
     background-color: #EEB0B0;
-  }
-  
-  /* LoginButton.css */
-
-.menu {
-    background-color: black;
-    padding: 25px;
-  }
-  
-  .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  .menu ul li:last-child {
-    margin-right: 0;
-  }
-  
-  .menu ul li a {
-    text-decoration: none;
-    color: #411C42;
-    font-weight: bold;
-    font-family: 'Joti One', cursive;
-  }
-  
-  .menu ul li a:hover {
-    color: #EEB0B0;
   }
   

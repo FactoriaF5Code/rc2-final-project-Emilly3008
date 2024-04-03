@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import HomePage from "./components/home/HomePage";
 import DetailsProduct from "./components/details/DetailsProduct";
 import "./login/LoginButton.css";
+import logo from  "./assets/imgs/pesa 1.png";
 
 function App() {
   return (
@@ -9,12 +10,16 @@ function App() {
       <div>
         {/* Barra de menú */}
         <nav className="menu">
-          <ul>
-            <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/about">Proteinas</Link></li>
-            <li><Link to="/services"></Link></li>
-            <li><Link to="/contact"></Link></li>
-          </ul>
+          <div className="leftSection">
+            <Link to="/">
+              <span className="siteName">GymElite</span>
+            </Link>
+            <div className="logoContainer">
+              <Link to="/">
+                <img src={logo} alt="Logo del Gimnasio" className="logo" />
+              </Link>
+            </div>
+          </div>
         </nav>
 
         <Routes>
@@ -32,6 +37,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
