@@ -34,7 +34,8 @@ function App() {
           <div className="modal">
             <div className="modalContent">
               <span className="closeButton" onClick={() => setShowModal(false)}>&times;</span>
-              <h2>Iniciar Sesión</h2>
+              
+              <h2 className="loginTitle">Iniciar Sesión</h2>
               <form>
                 <label htmlFor="username">Nombre de usuario:</label>
                 <input type="text" id="username" name="username" required />
@@ -45,7 +46,8 @@ function App() {
                 <label htmlFor="password">Contraseña:</label>
                 <input type="password" id="password" name="password" required />
 
-                <button type="submit">Registrarse</button>
+                <button type="submit" className="registerButton">Aceptar</button>
+
               </form>
             </div>
           </div>
