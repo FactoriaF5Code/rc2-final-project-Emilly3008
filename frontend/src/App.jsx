@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import HomePage from "./components/home/HomePage";
 import DetailsProduct from "./components/details/DetailsProduct";
 import "./login/LoginButton.css";
-import logo from  "./assets/imgs/pesa 1.png";
+import logo from  "./assets/pesa 1.png";
 
 function App() {
   return (
