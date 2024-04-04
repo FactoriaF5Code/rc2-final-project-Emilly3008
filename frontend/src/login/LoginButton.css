@@ -1,5 +1,5 @@
 .menu {
-  background-color: black;
+  background-color: rgb(10, 8, 8);
   padding: 10px 20px; /* Ajusta el relleno de la barra de menú */
 
 }
@@ -12,11 +12,9 @@
 }
 
 .logo {
-  width: 70px; /* Ajusta el tamaño del logo según lo necesites */
+  width: 200px; /* Ajusta el tamaño del logo según lo necesites */
   height: auto; /* Esto mantiene la proporción original */
-  margin-left: 10px; /* Espacio entre el logo y el nombre del sitio */
-  
-  
+ 
 }
 
 .siteName {
@@ -46,4 +44,68 @@
   .loginButton:hover {
     background-color: #EEB0B0;
   }
+ 
+  /* Estilos para el modal */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+.modalContent {
+  background-color: #f8dbdb;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+  height: 70%; /* Ajusta la altura del modal aquí */
+  max-height: 80%; /* Asegúrate de que el modal no sea más alto que el 80% de la pantalla */
+  overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido es demasiado largo */
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
   
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Joti One', cursive;
+  
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button[type="submit"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #411C42;
+  
+}
+
+button[type="submit"] {
+  font-family: 'Joti One', cursive;
+  background-color: #411C42;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #EEB0B0;
+}

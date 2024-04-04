@@ -5,17 +5,15 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { useParams } from "react-router-dom";
 
 function DetailsProduct() {
-  const { productId } = useParams(); // Obtén el parámetro 'productId' de la URL
+  const { productId } = useParams(); 
   const { data } = useFetch(`http://localhost:8080/product/${productId}`);
   const [searchTerm, setSearchTerm] = useState("");
   const [product, setProduct] = useState(null);
 
-  // Utiliza useEffect para actualizar el producto cuando cambia el ID
   useEffect(() => {
     setProduct(data);
   }, [data]);
 
-  // Asegúrate de que la data del producto esté disponible antes de renderizar
   if (!product) return null;
 
   return (

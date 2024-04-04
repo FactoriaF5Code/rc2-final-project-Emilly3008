@@ -19,10 +19,10 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 15vh; /* Ajusta este valor para mover la barra hacia arriba */
+  margin-bottom: 15vh;
 }
 
-/* O bien, puedes ajustar directamente la barra de búsqueda */
+
 .searchInput {
   width: 60vw;
   height: 6vh;
@@ -75,7 +75,7 @@
 
 .banner h2 {
   color: rgb(255, 255, 255);
-  font-family: "Kavoon", cursive; /* Establecer el tipo de letra como Kavoon */
+  font-family: "Kavoon", cursive; 
   font-size: 1.5rem;
 }
 
