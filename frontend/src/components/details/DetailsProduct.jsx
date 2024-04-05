@@ -1,7 +1,6 @@
 import "./DetailsProduct.css";
 import { useFetch } from "../catalogue/useFetch";
 import { useState, useEffect } from "react";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { useParams } from "react-router-dom";
 
 function DetailsProduct() {
@@ -26,9 +25,7 @@ function DetailsProduct() {
             placeholder="Buscar..."
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <span className="searchIcon">
-            <ShoppingCartOutlinedIcon />
-          </span>
+        
         </div>
         <div className="catalogueContainer">
           <section className="bannerContainer">
@@ -37,25 +34,11 @@ function DetailsProduct() {
                 <h2>¡Empieza tu entrenamiento hoy mismo!</h2>
               </div>
             </div>
-
-            <div>
-              <div key={product.id}>
-                <section className="details">
-                  <section className="detailsImg">
-                    <img src={product.img} alt={product.name}></img>
-                  </section>
-                  <section className="detailsParraf">
-                    <div>
-                      <p className="detailsTitle">{product.name}</p>
-                      <p className="detailsPrice">{product.price} €</p>
-                      <p className="detailsDescription">
-                        {product.description}
-                      </p>
-                    </div>
-                    <button className="detailsButton">Añadir al carrito</button>
-                  </section>
-                </section>
+            <div key={product.id} className="details">
+              <div className="detailsImg">
+                <img src={product.img} alt={product.name} />
               </div>
+          
             </div>
           </section>
         </div>
@@ -65,3 +48,4 @@ function DetailsProduct() {
 }
 
 export default DetailsProduct;
+

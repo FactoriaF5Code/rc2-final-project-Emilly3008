@@ -1,139 +1,97 @@
 .menu {
-  background-color: rgb(10, 8, 8);
+  background-color: rgb(10, 3, 9);
   padding: 10px 20px; /* Ajusta el relleno de la barra de menú */
-
 }
 
 .leftSection {
   display: flex;
   align-items: center;
   margin-left: 30px;
-  
 }
 
 .logo {
   width: 200px; /* Ajusta el tamaño del logo según lo necesites */
   height: auto; /* Esto mantiene la proporción original */
- 
 }
 
-.siteName {
-  font-family: 'Joti One', cursive;
-  font-size: 2.5rem; /* Tamaño del texto del nombre del sitio */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+.modalContent {
+  background-color: #f8dbdb;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 500px;
+  height: 70%;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  cursor: pointer;
+  color: #411c42;
   font-weight: bold;
-  color: #411C42; /* Color del texto */
-  margin-top: 10px;
-  
+  font-size: 20px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Joti One", cursive;
+}
 
-.loginButton {
-    position: fixed;
-    top: 30px;
-    right: 70px;
-    background-color: #411C42;
-    color: #fff;
-    padding: 7px 30px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 17px;
-    font-family: 'Joti One', cursive;
-  }
-  
-  .loginButton:hover {
-    background-color: #EEB0B0;
-  }
+.loginTitle {
+  font-family: "Joti One", cursive;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
- 
-  .modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-  }
-  
-  .modalContent {
-    background-color: #f8dbdb;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 80%; 
-    max-width: 500px;
-    height: 70%; 
-    max-height: 80%;
-    overflow-y: auto; 
+label {
+  margin-bottom: 5px;
+}
 
-  }
-  .closeButton {
-    position: absolute;
-    top: 10px;
-    right: 40px;
-    cursor: pointer;
-    color: #411C42;
-    font-weight: bold; 
-    font-size: 20px; 
-  }
-  
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Joti One', cursive;
-  }
-  
-  .loginTitle{
-    font-family: 'Joti One', cursive;
-    margin-bottom: 20px;
-    text-align: center; 
-   
-  } 
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button[type="submit"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e1c9e1;
+  width: 95%;
+}
 
+button[type="submit"] {
+  font-family: "Joti One", cursive;
+  background-color: #e1c9e1;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  padding: 8px;
+  border-radius: 5px;
+}
 
-  label {
-    margin-bottom: 5px; 
-    
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  button[type="submit"] {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #411C42;
-    width: 95%;
-    
-   
-
-  }
-  
-  button[type="submit"] {
-    font-family: 'Joti One', cursive;
-    background-color: #411C42;
-    color: rgb(0, 0, 0);
-    border: none;
-    cursor: pointer;
-    width: 150px; 
-    padding: 8px;
-    border-radius: 5px;
-    
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #EEB0B0;
-  }
+button[type="submit"]:hover {
+  background-color: #eeb0b0;
+}
 
 .registerButton {
   margin-top: 10px;
-  align-self: center; 
-  
+  align-self: center;
 }
 
-  
