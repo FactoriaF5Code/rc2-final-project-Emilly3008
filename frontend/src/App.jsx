@@ -1,19 +1,16 @@
-import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
-import HomePage from './components/home/HomePage';
-import DetailsProduct from './components/details/DetailsProduct'; 
-import './login/LoginButton.css';
-import logo from './assets/GymElite (1).png';
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import HomePage from "./components/home/HomePage";
+import "./login/LoginButton.css";
+import logo from "./assets/GymElite (1).png";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
-  const [isRegistered, setIsRegistered] = useState(false); // Estado para verificar si el usuario está registrado
+  const [isRegistered, setIsRegistered] = useState(false);
 
-  // Función para manejar el envío del formulario de registro
   const handleRegisterSubmit = (event) => {
     event.preventDefault();
-    // Aquí iría la lógica para registrar al usuario
-    setIsRegistered(true); // Cambia el estado para indicar que el usuario está registrado
+    setIsRegistered(true);
   };
 
   return (
@@ -26,32 +23,48 @@ function App() {
             </Link>
             <div className="logoContainer">
               <Link to="/">
-                <img src={logo} alt="./assets/GymElite (1).png" className="logo" />
+                <img
+                  src={logo}
+                  alt="./assets/GymElite (1).png"
+                  className="logo"
+                />
               </Link>
             </div>
+          </div>
+
+          <div className="rightSection">
+            <div className="dropdown">
+              <button className="dropdown-btn">Productos</button>
+              <div className="dropdown-content">
+                <Link to="/proteinas">Proteínas</Link>
+                <Link to="/creatinas">Creatinas</Link>
+              </div>
+            </div>
+            {!isRegistered && (
+              <button
+                className="loginButton"
+                onClick={() => setShowModal(true)}
+              >
+                Crear cuenta
+              </button>
+            )}
           </div>
         </nav>
 
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/details/:productId" element={<DetailsProduct />} />
+          <Route path="/proteinas" element={<Proteinas />} />
+          <Route path="/creatinas" element={<Creatinas />} />
+          <Route path="/proteinaAa" element={<ProteinaAa />} />
         </Routes>
 
-        {/* Si el usuario no está registrado, muestra el botón para crear una cuenta */}
-        {!isRegistered && (
-          <div className="buttonContainer">
-            <button className="loginButton" onClick={() => setShowModal(true)}>Crear cuenta</button>
-            <Link to="/otra-pagina">
-              <button className="buttonProducts">Productos</button> {/* Segundo botón */}
-            </Link>
-          </div>
-        )}
-        
         {showModal && (
           <div className="modal">
             <div className="modalContent">
-              <span className="closeButton" onClick={() => setShowModal(false)}>&times;</span>
-              
+              <span className="closeButton" onClick={() => setShowModal(false)}>
+                &times;
+              </span>
+
               <h2 className="loginTitle">Crear cuenta</h2>
               <form onSubmit={handleRegisterSubmit}>
                 <label htmlFor="username">Nombre de usuario:</label>
@@ -63,7 +76,9 @@ function App() {
                 <label htmlFor="password">Contraseña:</label>
                 <input type="password" id="password" name="password" required />
 
-                <button type="submit" className="registerButton">Aceptar</button>
+                <button type="submit" className="registerButton">
+                  Aceptar
+                </button>
               </form>
             </div>
           </div>
@@ -73,7 +88,49 @@ function App() {
   );
 }
 
+function Proteinas() {
+  return (
+    <div>
+      <h2 className="proteinPage">Proteínas</h2>
+      <div className="productsContainer">
+        <div className="product0">
+          <div className="imageContainer">
+            <Link to="/proteinaAa/">
+              <img
+                src="/src/assets/1176-optimum-nutrition-100-whey-gold-standard-908g-v3.webp"
+                alt=""
+              />
+            </Link>
+            <div className="proteina1"></div>
+          </div>
+          <p>Aqui tienes la mejor proteina natural</p>
+        </div>
+        {/* Añade más productos con imágenes y descripciones aquí */}
+      </div>
+    </div>
+  );
+}
+
+function Creatinas() {
+  return <h2>Creatinas</h2>;
+}
+
+
+function ProteinaAa() {
+  return (
+    <div>
+      <h2>Proteina Natural</h2>
+      <div className="protein1">
+        <button type="submit" className="buttonProtein">
+          Añadir a la cesta
+        </button>
+        <button type="submit" className="buttonProtein">
+          Comprar
+        </button>
+        
+      </div>
+    </div>
+  );
+}
+
 export default App;
-
-
-

@@ -16,6 +16,7 @@ function Catalogue() {
   };
 
   return (
+    
     <div className="bodyContainer">
       <button className="searchButton" onClick={() => console.log("Botón clickeado")}></button>
 
@@ -49,7 +50,5 @@ function Catalogue() {
   );
 }
 
+
 export default Catalogue;
-
-
-

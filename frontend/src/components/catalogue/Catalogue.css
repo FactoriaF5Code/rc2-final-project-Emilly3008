@@ -5,8 +5,7 @@
   margin-top: 50px; 
 }
 
-.loginButton,
-.buttonProducts {
+.loginButton{
   background-color: #e1c9e1; 
   color: #411c42;
   border: none;
@@ -16,10 +15,11 @@
   cursor: pointer;
   transition: background-color 0.3s ease; 
   font-family: "Joti One", cursive;
+  
+
 }
 
-.loginButton:hover,
-.buttonProducts:hover {
+.loginButton:hover {
   background-color: #f8dbdb; 
 }
 

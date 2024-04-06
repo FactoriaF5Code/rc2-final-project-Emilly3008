@@ -1,12 +1,52 @@
 .menu {
   background-color: rgb(10, 3, 9);
   padding: 10px 20px; /* Ajusta el relleno de la barra de menú */
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+  align-items: center;
 }
 
-.leftSection {
-  display: flex;
-  align-items: center;
-  margin-left: 30px;
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.dropdown-btn {
+  background-color: #e1c9e1;
+  color: #411c42;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Joti One", cursive;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: #e1c9;
+  padding: 20px 50px;
+  text-decoration: none;
+  display: block;
+  font-family: "Joti One", cursive;
+}
+
+.dropdown-content a:hover {
+  background-color: #411c42;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .logo {
@@ -29,7 +69,7 @@
 .modalContent {
   background-color: #f8dbdb;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   width: 80%;
   max-width: 500px;
@@ -91,7 +131,64 @@ button[type="submit"]:hover {
 }
 
 .registerButton {
-  margin-top: 10px;
+  margin-top: 90px;
   align-self: center;
 }
 
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.product img {
+  width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.product p {
+  font-size: 20px;
+  color: #333; /* Color del texto */
+  font-family: "Joti One", cursive;
+}
+
+.proteinPage {
+  font-family: "Joti One", cursive;
+  color: #411c42;
+  padding: 20px;
+}
+
+
+.buttonProtein {
+  margin: 15px;
+  padding: 1px 15px; 
+  font-size: 16px;
+  
+  
+}
+
+.protein1{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 90vh; 
+  margin-right: 400px;
+  margin-top: 200px; 
+}
+
+.product0 {
+  margin: 10px;
+  text-align: center;
+  display: flex; /* Utiliza flexbox para alinear los productos en horizontal */
+  flex-wrap: wrap; /* Permite que los productos se envuelvan si no caben en una sola línea */
+  justify-content: center; /* Centra los productos horizontalmente */
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.imageContainer img {
+  width: 100%; /* Ajusta el tamaño de la imagen */
+  height: auto;
+}
