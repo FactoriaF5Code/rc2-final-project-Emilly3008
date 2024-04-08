@@ -1,0 +1,37 @@
+.productsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px; 
+  
+}
+
+.productItem {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    margin: 40px;
+}
+
+.productImage {
+  width: 200px;
+  height: auto;
+}
+
+.message {
+  font-family: "Joti One", cursive;
+}
+
+.productDescription {
+  margin-top: 10px;
+}
+
+.proteinPage {
+  font-family: "Joti One", cursive;
+  background-color:  #411c42;
+  color:#e1c9e1;
+  text-align: center;
+  
+}

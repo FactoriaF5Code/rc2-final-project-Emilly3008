@@ -1,0 +1,58 @@
+.proteinPage2 {
+  font-family: "Joti One", cursive;
+  background-color: #411c42;
+  color: #e1c9e1;
+  text-align: center;
+}
+
+.imageContainer {
+  margin-right: 400px;
+  margin: auto; 
+  text-align: center;
+}
+
+.productImage {
+    width: 400px;
+    height: auto;
+    margin-top: 80px;
+    transition: transform 0.3s ease; 
+}
+
+.productImage:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón sobre la imagen */
+  }
+
+.descriptionContainer {
+  margin: 20px 0;
+  margin: 30px 590px;
+}
+
+.description {
+  font-size: 18px;
+  font-family: "Joti One", cursive;
+ 
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: 10px;
+}
+
+.buttonProtein {
+  margin-bottom: 20px;
+  font-size: 18px;
+  
+}
+
+.buttonProtein:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón sobre la imagen */
+  }
+
+  .mensaje{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Joti One", cursive;
+    background-color:  #e1c9e1;
+    color:#411c42 ;
+  }

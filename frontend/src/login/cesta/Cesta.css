@@ -1,0 +1,48 @@
+/* Cesta.css */
+
+.cestaPage {
+    font-family: "Joti One", cursive;
+    background-color: #411c42;
+    color: #e1c9e1;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .formulario input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .formulario button {
+    padding: 8px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .listaElementos {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .listaElementos li {
+    margin-bottom: 10px;
+  }
+  
+  .listaElementos button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
