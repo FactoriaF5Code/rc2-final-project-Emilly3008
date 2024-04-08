@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import './Proteinas.css';
+
 function Proteinas() {
   return (
     <div>
@@ -13,7 +14,7 @@ function Proteinas() {
             <p className="message">Sabor cereal milk.</p>
           </div>
           <div className="productDescription">
-            
+            <p className="price">24.99€</p> 
           </div>
         </div>
         <div className="product0">
@@ -24,11 +25,13 @@ function Proteinas() {
             <p className="message">Sabor rich chocolate.</p>
           </div>
           <div className="productDescription">
-          
+            <p className="price">19.99€</p> 
           </div>
         </div>
       </div>
     </div>
   );
 }
+
 export default Proteinas;
+

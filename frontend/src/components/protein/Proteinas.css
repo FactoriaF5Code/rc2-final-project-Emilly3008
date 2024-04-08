@@ -22,10 +22,13 @@
 
 .message {
   font-family: "Joti One", cursive;
+  color: #411c42;
+  font-size: 35px;
 }
 
 .productDescription {
   margin-top: 10px;
+ 
 }
 
 .proteinPage {
@@ -34,4 +37,12 @@
   color:#e1c9e1;
   text-align: center;
   
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #411c42;
+  margin-top: 5px; 
+  text-align: center;
 }

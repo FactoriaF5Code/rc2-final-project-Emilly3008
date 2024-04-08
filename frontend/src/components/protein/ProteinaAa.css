@@ -3,12 +3,15 @@
   background-color: #411c42;
   color: #e1c9e1;
   text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .imageContainer {
   margin-right: 400px;
   margin: auto; 
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .productImage {
@@ -16,20 +19,23 @@
     height: auto;
     margin-top: 80px;
     transition: transform 0.3s ease; 
+     max-width: 100%;
 }
 
 .productImage:hover {
-    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón sobre la imagen */
+    transform: scale(1.1); 
   }
 
 .descriptionContainer {
-  margin: 20px 0;
   margin: 30px 590px;
+  margin-bottom: 20px;
+  color:#411c42;
 }
 
 .description {
   font-size: 18px;
   font-family: "Joti One", cursive;
+  color:#411c42;
  
 }
 
@@ -37,11 +43,13 @@
   display: flex;
   flex-direction: column;
   align-items: 10px;
+ 
 }
 
 .buttonProtein {
   margin-bottom: 20px;
   font-size: 18px;
+  
   
 }
 
@@ -56,3 +64,47 @@
     background-color:  #e1c9e1;
     color:#411c42 ;
   }
+
+  .valoracionesContainer {
+    margin-bottom: 70px;
+    font-family: "Joti One", cursive;
+    color:#411c42 ;
+    margin-left: 100px;
+  }
+  
+  .valoracionesContainer h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+  }
+  
+  .valoracionesContainer ul {
+    list-style-type: none;
+    padding: 0;
+    
+  }
+  
+  .valoracionesContainer li {
+    margin-bottom: 10px;
+    margin-right: 100px;
+  }
+  
+  .valoracionesContainer input[type='text'],
+  .valoracionesContainer input[type='number'],
+  .valoracionesContainer button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 0.2rem;
+    background-color: #e1c9e1;
+    font-size: 20px;
+  }
+.buttonEnviar {
+  transition: transform 0.3s ease-in-out; 
+  
+}
+
+.buttonEnviar:hover {
+  transform: scale(1.1);
+  color: #e06ce4;
+}
