@@ -11,14 +11,10 @@ function Catalogue() {
     setDropdownOpen(!dropdownOpen);
   };
 
-  const handleCategoryClick = (category) => {
-    console.log("Categoría clickeada:", category);
-  };
-
   return (
     
     <div className="bodyContainer">
-      <button className="searchButton" onClick={() => console.log("Botón clickeado")}></button>
+     
 
       <div className="catalogueContainer">
         <section className="bannerContainer">

@@ -39,18 +39,6 @@
   position: relative;
 }
 
-.searchButton {
-  position: absolute;
-  bottom: 200px; 
-  background-image: url("../../assets/istockphoto-1479720563-1024x1024.jpg");
-  background-size: cover;
-  width: 250px;
-  height: 250px;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  left: 390px;
-}
 
 .banner h2 {
   color: rgb(255, 251, 251);

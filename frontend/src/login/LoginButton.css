@@ -1,8 +1,18 @@
 .menu {
   background-color: rgb(10, 3, 9);
-  padding: 10px 20px; /* Ajusta el relleno de la barra de menú */
+  padding: 10px 20px;
   display: flex;
-  justify-content: space-between; /* Alinea los elementos a los extremos */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+}
+
+.rightSection {
+  display: flex;
   align-items: center;
 }
 
@@ -50,8 +60,8 @@
 }
 
 .logo {
-  width: 200px; /* Ajusta el tamaño del logo según lo necesites */
-  height: auto; /* Esto mantiene la proporción original */
+  width: 200px;
+  height: auto;
 }
 
 .modal {
@@ -63,7 +73,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modalContent {
@@ -135,60 +145,17 @@ button[type="submit"]:hover {
   align-self: center;
 }
 
-.productsContainer {
+
+.basketIcon {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 80px;
-}
-
-.product img {
-  width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
-  margin-right: 20px; /* Espacio entre la imagen y el texto */
-}
-
-.product p {
-  font-size: 20px;
-  color: #333; /* Color del texto */
-  font-family: "Joti One", cursive;
-}
-
-.proteinPage {
-  font-family: "Joti One", cursive;
-  color: #411c42;
-  padding: 20px;
-}
-
-
-.buttonProtein {
-  margin: 15px;
-  padding: 1px 15px; 
-  font-size: 16px;
-  
-  
-}
-
-.protein1{
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
-  height: 90vh; 
-  margin-right: 400px;
-  margin-top: 200px; 
+  justify-content: center;
+  color: #e1c9e1;
+  text-decoration: none;
+  margin-right: 30px;
+ 
 }
 
-.product0 {
-  margin: 10px;
-  text-align: center;
-  display: flex; /* Utiliza flexbox para alinear los productos en horizontal */
-  flex-wrap: wrap; /* Permite que los productos se envuelvan si no caben en una sola línea */
-  justify-content: center; /* Centra los productos horizontalmente */
-}
-
-.imageContainer {
-  position: relative;
-}
-
-.imageContainer img {
-  width: 100%; /* Ajusta el tamaño de la imagen */
-  height: auto;
+.basketIcon:hover {
+  color:  #eeb0b0; 
 }
