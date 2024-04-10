@@ -1,0 +1,43 @@
+.proteinPage {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .productsCreatinaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .productItem1 {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .creatinaImg {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .creatinaImg:hover {
+    transform: scale(1.1);
+  }
+  
+  .message {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #666;
+    font-size: 18px;
+  }
+  
+  .price {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    font-size: 20px;
+  }

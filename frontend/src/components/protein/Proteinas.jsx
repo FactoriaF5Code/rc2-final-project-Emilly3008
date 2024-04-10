@@ -9,7 +9,9 @@ function Proteinas() {
         <div className="productProtein">
           <div className="productItem">
             <Link to="/proteinaAa/">
-              <img src="/src/assets/1176-optimum-nutrition-100-whey-gold-standard-908g-v3.webp" alt="" className="productImage" />
+              <img src="/src/assets/1176-optimum-nutrition-100-whey-gold-standard-908g-v3.webp"
+               alt="Proteina"
+               className="productPtroteinImg" />
             </Link>
             <p className="message">Sabor cereal milk.</p>
           </div>
@@ -19,13 +21,15 @@ function Proteinas() {
         </div>
         <div className="product0">
           <div className="productItem">
-            <Link to="/otraPagina/">
-              <img src="/src/assets/250-optimum-nutrition-100-whey-gold-standard-4-54kg-v4.webp" alt="" className="productImage" />
+            <Link to="/Proteina2/">
+              <img src="/src/assets/250-optimum-nutrition-100-whey-gold-standard-4-54kg-v4.webp" 
+                alt="Proteina"
+                className="productPtroteinImg"/>
             </Link>
             <p className="message">Sabor rich chocolate.</p>
           </div>
           <div className="productDescription">
-            <p className="price">19.99€</p> 
+            <p className="price2">19.99€</p> 
           </div>
         </div>
       </div>

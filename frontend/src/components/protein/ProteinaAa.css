@@ -1,5 +1,5 @@
 .proteinPage2 {
-  font-family: "Joti One", cursive;
+  font-family: "Inria Sans", sans-serif;
   background-color: #411c42;
   color: #e1c9e1;
   text-align: center;
@@ -9,99 +9,108 @@
 
 .imageContainer {
   margin-right: 400px;
-  margin: auto; 
+  margin: auto;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .productImage {
-    width: 400px;
-    height: auto;
-    margin-top: 80px;
-    transition: transform 0.3s ease; 
-     max-width: 100%;
+  width: 500px;
+  height: auto;
+  margin-top: 100px;
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  margin-left: -900px;
 }
 
 .productImage:hover {
-    transform: scale(1.1); 
-  }
+  transform: scale(1.1);
+}
 
 .descriptionContainer {
-  margin: 30px 590px;
-  margin-bottom: 20px;
-  color:#411c42;
+  position: relative;
+}
+
+.descriptionPrice {
+  position: absolute;
+  top: -370px;
+  right: 50%; 
+  transform: translate(50%, -50%); 
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Josefin Slab', serif;
+  
 }
 
 .description {
-  font-size: 18px;
-  font-family: "Joti One", cursive;
-  color:#411c42;
- 
+  position: absolute;
+  top: -250px;
+  right: 37%; 
+  transform: translate(50%, -50%); 
+  font-size: 25px;
+  font-family: 'Josefin Slab', serif;
 }
 
 .buttonContainer {
   display: flex;
   flex-direction: column;
-  align-items: 10px;
- 
+  align-items: center;
+
 }
 
 .buttonProtein {
-  margin-bottom: 20px;
   font-size: 18px;
-  
-  
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .buttonProtein:hover {
-    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón sobre la imagen */
-  }
+  transform: scale(1.1);
+}
 
-  .mensaje{
-    font-weight: bold;
-    font-size: 18px;
-    font-family: "Joti One", cursive;
-    background-color:  #e1c9e1;
-    color:#411c42 ;
-  }
+.mensaje {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Josefin Slab', serif;
+  background-color: #bff3b6;
+  color: #411c42;
+}
 
-  .valoracionesContainer {
-    margin-bottom: 70px;
-    font-family: "Joti One", cursive;
-    color:#411c42 ;
-    margin-left: 100px;
-  }
-  
-  .valoracionesContainer h3 {
-    font-size: 30px;
-    margin-bottom: 30px;
-    margin-right: 100px;
-  }
-  
-  .valoracionesContainer ul {
-    list-style-type: none;
-    padding: 0;
-    
-  }
-  
-  .valoracionesContainer li {
-    margin-bottom: 10px;
-    margin-right: 100px;
-  }
-  
-  .valoracionesContainer input[type='text'],
-  .valoracionesContainer input[type='number'],
-  .valoracionesContainer button {
-    margin-right: 10px;
-    margin-bottom: 10px;
-    padding: 8px;
-    border-radius: 0.2rem;
-    background-color: #e1c9e1;
-    font-size: 20px;
-  }
+.valoracionesContainer {
+  margin-bottom: 70px;
+  font-family: "Inria Sans", sans-serif;
+  color: #411c42;
+  margin-left: 100px;
+}
+
+.valoracionesContainer h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-right: 100px;
+}
+
+.valoracionesContainer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.valoracionesContainer li {
+  margin-bottom: 10px;
+  margin-right: 100px;
+}
+
+.valoracionesContainer input[type="text"],
+.valoracionesContainer input[type="number"],
+.valoracionesContainer button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 0.2rem;
+  background-color: #e1c9e1;
+  font-size: 20px;
+}
 .buttonEnviar {
-  transition: transform 0.3s ease-in-out; 
-  
+  transition: transform 0.3s ease-in-out;
 }
 
 .buttonEnviar:hover {

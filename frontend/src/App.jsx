@@ -1,18 +1,37 @@
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import HomePage from "./components/home/HomePage";
 import Proteinas from "./components/protein/Proteinas";
-import Creatinas from "./components/protein/creatina/Creatina";
+import Creatina from "./components/protein/creatina/Creatinas";
 import ProteinaAa from "./components/protein/ProteinaAa";
 import Cesta from "./login/cesta/Cesta";
+import Proteina2 from "./components/protein/Proteina2";
+import Creatinamonohidrato from "./components/protein/Creatinamonohidrato";
+import CreatineBoom from "./components/protein/CreatineBoom";
+import CheckoutForm from "./components/protein/CheckoutForm";
 import "./login/LoginButton.css";
 import logo from "./assets/GymElite (1).png";
+
 
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [isRegistered, setIsRegistered] = useState(false);
+  const [products, setProducts] = useState([]);
+
+  const fetchProducts = async () => {
+    try {
+      const response = await fetch("https://tu-api-remota.com/api/products");
+      const data = await response.json();
+      setProducts(data);
+    } catch (error) {
+      console.error("Error fetching products:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
 
   const handleRegisterSubmit = (event) => {
     event.preventDefault();
@@ -47,7 +66,7 @@ function App() {
                 Crear cuenta
               </button>
             )}
-            <div style={{ marginRight: '10px' }}></div> {/* Espacio entre botones */}
+            <div style={{ marginRight: '10px' }}></div> 
             <Link to="/mi-cesta" className="basketIcon">
               <ShoppingCartOutlinedIcon />
             </Link>
@@ -57,9 +76,13 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/proteinas" element={<Proteinas />} />
-          <Route path="/creatinas" element={<Creatinas />} />
+          <Route path="/creatinas" element={<Creatina />} />
           <Route path="/proteinaAa" element={<ProteinaAa />} />
           <Route path="/mi-cesta" element={<Cesta />} />
+          <Route path="/proteina2" element={<Proteina2 />} />
+          <Route path="/creatinamonohidrato" element={<Creatinamonohidrato />} />
+          <Route path="/CreatineBoom" element={<CreatineBoom />} />
+          <Route path="/checkoutForm" element={<CheckoutForm />} />
         </Routes>
   
         {showModal && (
@@ -93,4 +116,6 @@ function App() {
 }
 
 export default App;
+
+
 
