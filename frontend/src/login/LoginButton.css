@@ -82,6 +82,7 @@
 }
 
 .modalContent {
+  position:relative;
   background-color: #f8dbdb;
   padding: 20px;
   border-radius: 5px;

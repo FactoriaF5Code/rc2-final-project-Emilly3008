@@ -6,7 +6,7 @@ import Proteinas from "./components/protein/Proteinas";
 import Creatinas from "./components/protein/creatina/Creatinas";
 import ProteinaAa from "./components/protein/ProteinaAa";
 import Proteina2 from "./components/protein/Proteina2";
-import CreatinaMonohidrato from "./components/protein/CreatinaMonohidrato";
+import CreatinaMonohidrato from "./components/protein/Creatinamonohidrato";
 import CreatineBoom from "./components/protein/CreatineBoom";
 import CheckoutForm from "./components/protein/CheckoutForm"
 import "./login/LoginButton.css";
@@ -75,6 +75,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/proteinas" element={<Proteinas />} />
+          
           <Route path="/creatinas" element={<Creatinas />} />
           <Route path="/proteinaAa" element={<ProteinaAa />} />
           <Route path="/proteina2" element={<Proteina2 />} />
