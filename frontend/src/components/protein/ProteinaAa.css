@@ -39,22 +39,26 @@
   font-weight: bold;
   font-size: 40px;
   font-family: 'Josefin Slab', serif;
+  margin-right: -60px;
   
 }
 
 .description {
   position: absolute;
   top: -250px;
-  right: 37%; 
+  margin-left: 30px;
   transform: translate(50%, -50%); 
-  font-size: 25px;
+  font-size: 30px;
   font-family: 'Josefin Slab', serif;
+
 }
 
 .buttonContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 150px;
+  margin-top: -20px;
 
 }
 
@@ -70,7 +74,6 @@
 
 .mensaje {
   font-weight: bold;
-  font-size: 18px;
   font-family: 'Josefin Slab', serif;
   background-color: #bff3b6;
   color: #411c42;
@@ -117,3 +120,4 @@
   transform: scale(1.1);
   color: #e06ce4;
 }
+

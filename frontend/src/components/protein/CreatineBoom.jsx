@@ -98,7 +98,7 @@ function CreatineBoom() {
         })} className="buttonProtein">
           Añadir a la cesta
         </button>
-        <Link to="/comprar">
+        <Link to="/checkoutForm">
           <button type="submit" className="buttonProtein">
             Comprar
           </button>

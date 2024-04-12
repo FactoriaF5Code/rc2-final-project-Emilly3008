@@ -90,11 +90,11 @@ function ProteinaAa() {
 
   return (
     <div>
-      <h2 className="proteinPage2">Proteina sabor chocolate</h2>
+      <h2 className="proteinPage2">Proteina cereal milk</h2>
       <div className="imageContainer">
         <img
           src="/src/assets/1176-optimum-nutrition-100-whey-gold-standard-908g-v3.webp"
-          alt="Proteina"
+          alt="ProteinaAa"
           className="productImage"
         />
       </div>
@@ -121,7 +121,7 @@ function ProteinaAa() {
         >
           Añadir a la cesta
         </button>
-        <Link to="/comprar">
+        <Link to="/checkoutForm">
           <button type="submit" className="buttonProtein">
             Comprar
           </button>
@@ -130,6 +130,9 @@ function ProteinaAa() {
       {mostrarMensaje && (
         <div className="mensaje">Producto añadido a la cesta</div>
       )}
+
+
+
       <div className="valoracionesContainer">
         <h3>Cuentanos tu experiencia</h3>
         <ul>

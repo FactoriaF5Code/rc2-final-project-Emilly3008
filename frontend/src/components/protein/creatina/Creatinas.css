@@ -1,43 +1,48 @@
-.proteinPage {
-    text-align: center;
-    color: #333;
-    font-size: 24px;
-  }
-  
-  .productsCreatinaContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .productItem1 {
-    margin: 20px;
-    text-align: center;
-  }
-  
-  .creatinaImg {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-  }
-  
-  .creatinaImg:hover {
-    transform: scale(1.1);
-  }
-  
-  .message {
-    margin-top: 10px;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    color: #666;
-    font-size: 18px;
-  }
-  
-  .price {
-    text-align: center;
-    font-weight: bold;
-    color: #333;
-    font-size: 20px;
-  }
+.creatinaPage {
+  font-family: "Josefin Slab", serif;
+  background-color: #411c42;
+  color: #e1c9e1;
+  text-align: center;
+}
+
+.productsCreatinaContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.productItem1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 100px;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.creatinaImg {
+  width: 250px;
+}
+
+.creatinaImg:hover {
+  transform: scale(1.1);
+}
+
+.message {
+  font-family: "Inria Sans", sans-serif;
+  color: #411c42;
+  font-size: 19px;
+  margin-top: 25px;
+}
+
+.productDescriptionCreatina {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Josefin Slab", serif;
+  color: #411c42;
+
+}

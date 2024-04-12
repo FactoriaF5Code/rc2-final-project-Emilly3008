@@ -3,13 +3,12 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import HomePage from "./components/home/HomePage";
 import Proteinas from "./components/protein/Proteinas";
-import Creatina from "./components/protein/creatina/Creatinas";
+import Creatinas from "./components/protein/creatina/Creatinas";
 import ProteinaAa from "./components/protein/ProteinaAa";
-import Cesta from "./login/cesta/Cesta";
 import Proteina2 from "./components/protein/Proteina2";
-import Creatinamonohidrato from "./components/protein/Creatinamonohidrato";
+import CreatinaMonohidrato from "./components/protein/CreatinaMonohidrato";
 import CreatineBoom from "./components/protein/CreatineBoom";
-import CheckoutForm from "./components/protein/CheckoutForm";
+import CheckoutForm from "./components/protein/CheckoutForm"
 import "./login/LoginButton.css";
 import logo from "./assets/GymElite (1).png";
 
@@ -76,13 +75,13 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/proteinas" element={<Proteinas />} />
-          <Route path="/creatinas" element={<Creatina />} />
+          <Route path="/creatinas" element={<Creatinas />} />
           <Route path="/proteinaAa" element={<ProteinaAa />} />
-          <Route path="/mi-cesta" element={<Cesta />} />
           <Route path="/proteina2" element={<Proteina2 />} />
-          <Route path="/creatinamonohidrato" element={<Creatinamonohidrato />} />
+          <Route path="/creatinamonohidrato" element={<CreatinaMonohidrato />} />
           <Route path="/CreatineBoom" element={<CreatineBoom />} />
           <Route path="/checkoutForm" element={<CheckoutForm />} />
+          
         </Routes>
   
         {showModal && (

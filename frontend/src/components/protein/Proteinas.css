@@ -1,3 +1,10 @@
+.proteinPage {
+  font-family: "Josefin Slab", serif;
+  background-color: #411c42;
+  color: #e1c9e1;
+  text-align: center;
+}
+
 .productsContainer {
   display: flex;
   justify-content: center;
@@ -5,16 +12,19 @@
   flex-wrap: wrap;
   margin-top: 30px;
 }
-.productPtroteinImg {
-  width: 400px;
-}
+
 .productItem {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 40px;
+  margin: 100px;
   transition: transform 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.productPtroteinImg {
+  width: 400px;
 }
 
 .productItem img:hover {
@@ -24,25 +34,16 @@
 .message {
   font-family: "Inria Sans", sans-serif;
   color: #411c42;
-  font-size: 25px;
+  font-size: 19px;
   margin-top: 25px;
 }
 
 .productDescription {
-  margin-top: 10px;
-}
-
-.proteinPage {
-  font-family: "Josefin Slab", serif;
-  background-color: #411c42;
-  color: #e1c9e1;
-  text-align: center;
-}
-
-.price {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: bold;
-  color: #411c42;
   text-align: center;
   font-family: "Josefin Slab", serif;
 }
+
+
+

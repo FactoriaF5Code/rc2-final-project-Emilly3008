@@ -1,19 +1,19 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSmile, faFrown } from '@fortawesome/free-solid-svg-icons';
-import { styled } from '@mui/material/styles';
-import Rating from '@mui/material/Rating';
-import PropTypes from 'prop-types';
-import SentimentVeryDissatisfiedIcon from '@mui/icons-material/SentimentVeryDissatisfied';
-import SentimentDissatisfiedIcon from '@mui/icons-material/SentimentDissatisfied';
-import SentimentSatisfiedIcon from '@mui/icons-material/SentimentSatisfied';
-import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAltOutlined';
-import SentimentVerySatisfiedIcon from '@mui/icons-material/SentimentVerySatisfied';
-import './ProteinaAa.css';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSmile, faFrown } from "@fortawesome/free-solid-svg-icons";
+import { styled } from "@mui/material/styles";
+import Rating from "@mui/material/Rating";
+import PropTypes from "prop-types";
+import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
+import SentimentDissatisfiedIcon from "@mui/icons-material/SentimentDissatisfied";
+import SentimentSatisfiedIcon from "@mui/icons-material/SentimentSatisfied";
+import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAltOutlined";
+import SentimentVerySatisfiedIcon from "@mui/icons-material/SentimentVerySatisfied";
+import "./Proteina2.css";
 
 const StyledRating = styled(Rating)(({ theme }) => ({
-  '& .MuiRating-iconEmpty .MuiSvgIcon-root': {
+  "& .MuiRating-iconEmpty .MuiSvgIcon-root": {
     color: theme.palette.action.disabled,
   },
 }));
@@ -21,23 +21,23 @@ const StyledRating = styled(Rating)(({ theme }) => ({
 const customIcons = {
   1: {
     icon: <SentimentVeryDissatisfiedIcon color="error" />,
-    label: 'Muy insatisfecho',
+    label: "Muy insatisfecho",
   },
   2: {
     icon: <SentimentDissatisfiedIcon color="error" />,
-    label: 'Insatisfecho',
+    label: "Insatisfecho",
   },
   3: {
     icon: <SentimentSatisfiedIcon color="warning" />,
-    label: 'Neutral',
+    label: "Neutral",
   },
   4: {
     icon: <SentimentSatisfiedAltIcon color="success" />,
-    label: 'Satisfecho',
+    label: "Satisfecho",
   },
   5: {
     icon: <SentimentVerySatisfiedIcon color="success" />,
-    label: 'Muy satisfecho',
+    label: "Muy satisfecho",
   },
 };
 
@@ -54,12 +54,16 @@ function Proteina2() {
   const [productosEnCesta, setProductosEnCesta] = useState([]);
   const [mostrarMensaje, setMostrarMensaje] = useState(false);
   const [valoraciones, setValoraciones] = useState([]);
-  const [nuevaValoracion, setNuevaValoracion] = useState({ nombre: '', calificacion: '', comentario: '' });
+  const [nuevaValoracion, setNuevaValoracion] = useState({
+    nombre: "",
+    calificacion: "",
+    comentario: "",
+  });
 
   const agregarProductoACesta = (producto) => {
     // Verificar si ya hay 100 productos en la cesta
     if (productosEnCesta.length >= 100) {
-      alert('No se pueden agregar más de 100 productos a la cesta');
+      alert("No se pueden agregar más de 100 productos a la cesta");
       return;
     }
 
@@ -72,45 +76,72 @@ function Proteina2() {
   };
 
   const agregarValoracion = () => {
-    if (nuevaValoracion.nombre.trim() === '' || nuevaValoracion.comentario.trim() === '') {
-      alert('Por favor, ingresa todos los campos de la valoración');
+    if (
+      nuevaValoracion.nombre.trim() === "" ||
+      nuevaValoracion.comentario.trim() === ""
+    ) {
+      alert("Por favor, ingresa todos los campos de la valoración");
       return;
     }
 
     setValoraciones([...valoraciones, nuevaValoracion]);
-    setNuevaValoracion({ nombre: '', calificacion: '', comentario: '' });
+    setNuevaValoracion({ nombre: "", calificacion: "", comentario: "" });
   };
 
   return (
     <div>
-      <h2 className="proteinPage2">Proteina sabor chocolate</h2>
-      <div className="imageContainer">
-        <img src="/src/assets/250-optimum-nutrition-100-whey-gold-standard-4-54kg-v4.webp" alt="Creatina" className="productImage" />
+      <h2 className="proteinPage3">Proteina sabor chocolate</h2>
+      <div className="imageContainer3">
+        <img
+          src="/src/assets/250-optimum-nutrition-100-whey-gold-standard-4-54kg-v4.webp"
+          alt="Creatina"
+          className="productImage"
+        />
       </div>
-      <div className="descriptionContainer">
-        <p className="description">Una fórmula avanzada de creatina para mejorar la resistencia y el rendimiento muscular.</p>
+      <div className="descriptionContainer3">
+        <p className="descriptionPrice3">24,99€</p>
+        <p className="description3">
+          Una fórmula avanzada de creatina para mejorar la resistencia y el
+          rendimiento muscular.
+        </p>
       </div>
-      <div className="buttonContainer">
-        <button type="submit" onClick={() => agregarProductoACesta({
-          nombre: 'Creatina Boom',
-          imagen: '/src/assets/151jmaV40ugL._AC_SX679_1.jpg',
-          descripcion: 'Una fórmula avanzada de creatina para mejorar la resistencia y el rendimiento muscular.'
-        })} className="buttonProtein">
+      <div className="buttonContainer3">
+        <button
+          type="submit"
+          onClick={() =>
+            agregarProductoACesta({
+              nombre: "Creatina Boom",
+              imagen: "/src/assets/151jmaV40ugL._AC_SX679_1.jpg",
+              descripcion:
+                "Una fórmula avanzada de creatina para mejorar la resistencia y el rendimiento muscular.",
+            })
+          }
+          className="buttonProtein3"
+        >
           Añadir a la cesta
         </button>
         <Link to="/checkoutForm">
-          <button type="submit" className="buttonProtein">
+          <button type="submit" className="buttonProtein3">
             Comprar
           </button>
         </Link>
       </div>
-      {mostrarMensaje && <div className="mensaje">Producto añadido a la cesta</div>}
+      {mostrarMensaje && (
+        <div className="mensaje">Producto añadido a la cesta</div>
+      )}
       <div className="valoracionesContainer">
         <h3>Cuentanos tu experiencia</h3>
         <ul>
           {valoraciones.map((valoracion, index) => (
             <li key={index}>
-              <strong>{valoracion.nombre}:</strong> {valoracion.comentario} (Calificación: {valoracion.calificacion === 'feliz' ? <FontAwesomeIcon icon={faSmile} /> : <FontAwesomeIcon icon={faFrown} />})
+              <strong>{valoracion.nombre}:</strong> {valoracion.comentario}{" "}
+              (Calificación:{" "}
+              {valoracion.calificacion === "feliz" ? (
+                <FontAwesomeIcon icon={faSmile} />
+              ) : (
+                <FontAwesomeIcon icon={faFrown} />
+              )}
+              )
             </li>
           ))}
         </ul>
@@ -118,22 +149,37 @@ function Proteina2() {
           <input
             type="text"
             value={nuevaValoracion.nombre}
-            onChange={(e) => setNuevaValoracion({ ...nuevaValoracion, nombre: e.target.value })}
+            onChange={(e) =>
+              setNuevaValoracion({ ...nuevaValoracion, nombre: e.target.value })
+            }
             placeholder="Nombre"
           />
           <StyledRating
             name="customized-icons"
             defaultValue={2}
             IconContainerComponent={IconContainer}
-            onChange={(e, newValue) => setNuevaValoracion({ ...nuevaValoracion, calificacion: newValue })}
+            onChange={(e, newValue) =>
+              setNuevaValoracion({ ...nuevaValoracion, calificacion: newValue })
+            }
           />
           <input
             type="text"
             value={nuevaValoracion.comentario}
-            onChange={(e) => setNuevaValoracion({ ...nuevaValoracion, comentario: e.target.value })}
+            onChange={(e) =>
+              setNuevaValoracion({
+                ...nuevaValoracion,
+                comentario: e.target.value,
+              })
+            }
             placeholder="Comentario"
           />
-          <button className="buttonEnviar" type="submit" onClick={agregarValoracion}>Enviar</button>
+          <button
+            className="buttonEnviar"
+            type="submit"
+            onClick={agregarValoracion}
+          >
+            Enviar
+          </button>
         </div>
       </div>
     </div>
