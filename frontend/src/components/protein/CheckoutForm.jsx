@@ -38,9 +38,9 @@ function CheckoutForm() {
 
   return (
     <div className="checkout-form">
-      <h2>Checkout</h2>
+      <h2></h2>
       <form onSubmit={handleSubmit}>
-        <h3>Información de envío</h3>
+        <h3 className="infoEnvio">Información de envío</h3>
         <label htmlFor="fullName">Nombre completo:</label>
         <input
           type="text"
@@ -77,7 +77,7 @@ function CheckoutForm() {
           onChange={handleShippingChange}
           required
         />
-        <label htmlFor="country">País:</label>
+        <label htmlFor="country">Provincia:</label>
         <input
           type="text"
           id="country"
@@ -87,7 +87,7 @@ function CheckoutForm() {
           required
         />
 
-        <h3>Información de pago</h3>
+        <h3 className="pagoInfo">Información de pago</h3>
         <div>
           <label htmlFor="method">Método de pago:</label>
           <select

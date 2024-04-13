@@ -1,2 +1,42 @@
+.checkout-form {
+  max-width: 400px; 
+  margin: 0 auto; 
+  text-align: center; 
+  margin-top: 80px;
+}
 
+.checkout-form label {
+  display: block; 
+  margin-bottom: 10px; 
+}
 
+.checkout-form input,
+.checkout-form select {
+  width: 100%; 
+  margin-bottom: 20px;
+}
+
+.pay-button {
+  background-color: #411c42; 
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px;
+  cursor: pointer; 
+  margin-left: 125px;
+  
+}
+
+.continue-shopping {
+  display: block; 
+  margin-top: 20px; 
+  text-decoration: none; 
+  color: #411c42; 
+}
+
+.pagoInfo{
+    color: #411c42;
+}
+
+.infoEnvio{
+    color: #411c42;
+}
