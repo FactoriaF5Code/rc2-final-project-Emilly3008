@@ -2,3 +2,15 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --MoradoClaro:#9B97B5;
+    --MoradoBotones:#562169;
+    --MoradoLetra:#4F0075;
+    --Morado:#E1C9E1;
+    --Hover:#FACEDE;
+    --Blanco:#FFFFFF;
+    --Rojo:#FF4E4E;
+    --Verde:#BFF3B6;
+
+}

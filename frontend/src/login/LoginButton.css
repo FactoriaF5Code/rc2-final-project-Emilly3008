@@ -1,5 +1,5 @@
 .menu {
-  background-color: rgb(10, 3, 9);
+  background-color:var(--MoradoClaro);
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -16,7 +16,7 @@
   align-items: center;
 }
 .loginButton{
-  font-family: 'Inria Sans', sans-serif;
+  font-family: 'Hind Guntur', sans-serif;
   font-weight: bold;
 } 
 
@@ -27,21 +27,21 @@
 }
 
 .dropdown-btn {
-  background-color: #e1c9e1;
-  color: #411c42;
+  background-color:var(--Morado);
+  color: var(--MoradoLetra);
   border: none;
   border-radius: 0.2rem;
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-family: 'Inria Sans', sans-serif;
+  font-family: 'Hind Guntur', sans-serif;
   font-weight: bold;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #e1c9e1;
+  background-color: var(--MoradoBotones);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -49,15 +49,15 @@
 }
 
 .dropdown-content a {
-  color: #e1c9;
+  color: var(--MoradoLetra);
   padding: 20px 50px;
   text-decoration: none;
   display: block;
-  font-family: 'Inria Sans', sans-serif;
+  font-family: 'Hind Guntur', sans-serif;
 }
 
 .dropdown-content a:hover {
-  background-color: #411c42;
+  background-color: var(--Hover);
 }
 
 .dropdown:hover .dropdown-content {
@@ -107,13 +107,7 @@
 form {
   display: flex;
   flex-direction: column;
-  font-family: 'Inria Sans', sans-serif;
-}
-
-.loginTitle {
-  font-family: 'Inria Sans', sans-serif;
-  margin-bottom: 20px;
-  text-align: center;
+  font-family: 'Hind Guntur', sans-serif;
 }
 
 label {
@@ -127,14 +121,14 @@ button[type="submit"] {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #e1c9e1;
+  border: 1px solid var(--MoradoLetra);
   width: 95%;
 }
 
 button[type="submit"] {
-  font-family: 'Inria Sans', sans-serif;
-  background-color: #e1c9e1;
-  color: #411c42;
+  font-family: 'Hind Guntur', sans-serif;
+  background-color:var(--Morado);
+  color: var(--Blanco);
   border: none;
   cursor: pointer;
   width: 150px;
@@ -149,6 +143,7 @@ button[type="submit"]:hover {
 .registerButton {
   margin-top: 90px;
   align-self: center;
+  background-color: var(--MoradoBotones);
 }
 
 
@@ -156,7 +151,7 @@ button[type="submit"]:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #e1c9e1;
+  color:var(--MoradoBotones);
   text-decoration: none;
   margin-right: 30px;
  

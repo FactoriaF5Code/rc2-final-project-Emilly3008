@@ -1,6 +1,6 @@
 .proteinPage2 {
-  font-family: "Inria Sans", sans-serif;
-  background-color: #411c42;
+  font-family: "Hind Guntur", sans-serif;
+  background-color: var(--MoradoLetra);
   color: #e1c9e1;
   text-align: center;
   font-size: 24px;
@@ -34,23 +34,23 @@
 .descriptionPrice {
   position: absolute;
   top: -370px;
-  right: 50%; 
-  transform: translate(50%, -50%); 
+  right: 50%;
+  transform: translate(50%, -50%);
   font-weight: bold;
   font-size: 40px;
-  font-family: 'Josefin Slab', serif;
+  font-family: "Hind Guntur", sans-serif;
   margin-right: -60px;
-  
+  color: var(--MoradoLetra);
 }
 
 .description {
   position: absolute;
   top: -250px;
   margin-left: 30px;
-  transform: translate(50%, -50%); 
+  transform: translate(50%, -50%);
   font-size: 30px;
-  font-family: 'Josefin Slab', serif;
-
+  font-family: "Hind Guntur", sans-serif;
+  color: var(--MoradoLetra);
 }
 
 .buttonContainer {
@@ -59,13 +59,14 @@
   align-items: center;
   margin-left: 150px;
   margin-top: -20px;
-
+ 
 }
 
 .buttonProtein {
   font-size: 18px;
   margin-bottom: 10px;
   margin-right: 10px;
+  
 }
 
 .buttonProtein:hover {
@@ -74,15 +75,14 @@
 
 .mensaje {
   font-weight: bold;
-  font-family: 'Josefin Slab', serif;
+  font-family: "Hind Guntur", sans-serif;
   background-color: #bff3b6;
-  color: #411c42;
+  color:var(--MoradoLetra);
 }
 
 .valoracionesContainer {
   margin-bottom: 70px;
-  font-family: "Inria Sans", sans-serif;
-  color: #411c42;
+  font-family: "Hind Guntur", sans-serif;
   margin-left: 100px;
 }
 
@@ -90,16 +90,19 @@
   font-size: 30px;
   margin-bottom: 30px;
   margin-right: 100px;
+ 
 }
 
 .valoracionesContainer ul {
   list-style-type: none;
   padding: 0;
+
 }
 
 .valoracionesContainer li {
   margin-bottom: 10px;
   margin-right: 100px;
+
 }
 
 .valoracionesContainer input[type="text"],
@@ -111,13 +114,14 @@
   border-radius: 0.2rem;
   background-color: #e1c9e1;
   font-size: 20px;
+  color: var(--MoradoLetra);
 }
 .buttonEnviar {
   transition: transform 0.3s ease-in-out;
+  color: var(--MoradoLetra);
 }
 
 .buttonEnviar:hover {
   transform: scale(1.1);
-  color: #e06ce4;
+  color: var(--MoradoLetra);
 }
-

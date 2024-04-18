@@ -1,11 +1,11 @@
-.creatinaPage {
-  font-family: "Josefin Slab", serif;
-  background-color: #411c42;
+.proteinPage {
+  font-family: "Hind Guntur", sans-serif;
+  background-color: var(--MoradoLetra);
   color: #e1c9e1;
   text-align: center;
 }
 
-.productsCreatinaContainer {
+.productsContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
   margin-top: 30px;
 }
 
-.productItem1 {
+.productItem {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,26 +23,32 @@
   margin-bottom: 10px;
 }
 
-.creatinaImg {
-  width: 250px;
+.productPtroteinImg {
+  width: 400px;
 }
 
-.creatinaImg:hover {
+.productItem img:hover {
   transform: scale(1.1);
 }
 
 .message {
-  font-family: "Inria Sans", sans-serif;
-  color: #411c42;
+  font-family: "Hind Guntur", sans-serif;
+  color: var(--MoradoLetra);
   font-size: 19px;
   margin-top: 25px;
 }
 
-.productDescriptionCreatina {
-  font-size: 25px;
+.productDescription {
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
-  font-family: "Josefin Slab", serif;
-  color: #411c42;
+  font-family: "Hind Guntur", sans-serif;
+}
 
+.price{
+  color: var(--MoradoLetra);
+}
+
+.price2{
+  color: var(--MoradoLetra);
 }

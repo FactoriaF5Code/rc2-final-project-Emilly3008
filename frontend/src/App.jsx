@@ -1,21 +1,20 @@
-import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import { useEffect, useState } from "react";
+import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import HomePage from "./components/home/HomePage";
-import Proteinas from "./components/protein/Proteinas";
-import Creatinas from "./components/protein/creatina/Creatinas";
-import ProteinaAa from "./components/protein/ProteinaAa";
-import Proteina2 from "./components/protein/Proteina2";
-import CreatinaMonohidrato from "./components/protein/Creatinamonohidrato";
-import CreatineBoom from "./components/protein/CreatineBoom";
-import CheckoutForm from "./components/protein/CheckoutForm"
-import "./login/LoginButton.css";
+import CheckoutForm from "./components/Product/CheckoutForm";
+import Proteina2 from "./components/Product/Proteina2";
+import ProteinaAa from "../src/components/Product/ProteinaAa";
+import Proteinas from "./components/Product/Proteinas";
 import logo from "./assets/GymElite (1).png";
+import "./login/LoginButton.css";
 
 
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [isRegistered, setIsRegistered] = useState(false);
+  const [cartItems, setCartItems] = useState([]);
+  const [cartTotal, setCartTotal] = useState(0);
   const [products, setProducts] = useState([]);
 
   const fetchProducts = async () => {
@@ -31,6 +30,23 @@ function App() {
   useEffect(() => {
     fetchProducts();
   }, []);
+
+  const addToCart = (product) => {
+    setCartItems([...cartItems, product]);
+    setCartTotal(cartTotal + product.price);
+  };
+
+  const removeFromCart = (price) => {
+    const lastItem = cartItems[cartItems.length - 1];
+    if (lastItem) {
+      setCartItems(cartItems.slice(0, -1));
+      setCartTotal(cartTotal - price);
+    }
+  };
+
+  const checkout = () => {
+    alert(`Total a pagar: ${cartTotal} MXN`);
+  };
 
   const handleRegisterSubmit = (event) => {
     event.preventDefault();
@@ -57,11 +73,11 @@ function App() {
               <button className="dropdown-btn">Productos</button>
               <div className="dropdown-content">
                 <Link to="/proteinas">Proteínas</Link>
-                <Link to="/creatinas">Creatinas</Link>
+               
               </div>
             </div>
             {!isRegistered && (
-              <button className="loginButton" onClick={() => setShowModal(true)}>
+               <button type="submit" className="loginButton" onClick={() => setShowModal(true)}>
                 Crear cuenta
               </button>
             )}
@@ -76,13 +92,11 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/proteinas" element={<Proteinas />} />
           
-          <Route path="/creatinas" element={<Creatinas />} />
+          
           <Route path="/proteinaAa" element={<ProteinaAa />} />
           <Route path="/proteina2" element={<Proteina2 />} />
-          <Route path="/creatinamonohidrato" element={<CreatinaMonohidrato />} />
-          <Route path="/CreatineBoom" element={<CreatineBoom />} />
           <Route path="/checkoutForm" element={<CheckoutForm />} />
-          
+       
         </Routes>
   
         {showModal && (
@@ -116,6 +130,3 @@ function App() {
 }
 
 export default App;
-
-
-

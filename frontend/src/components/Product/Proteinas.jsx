@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import './Proteinas.css';
+import "./Proteinas.css";
+
 
 function Proteinas() {
   return (
